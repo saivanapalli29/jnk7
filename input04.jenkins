@@ -6,7 +6,8 @@ pipeline {
                 input(
                     message: "Ready to continue?",
                     ok: "Yes",
-                    submitter: "ssbostan"
+                    submitter "ssbostan,admin,admins,managers"
+                    submitterParameter "SUBMITTER_USERNAME"
                 )
                 echo "Deployment stage."
             }
